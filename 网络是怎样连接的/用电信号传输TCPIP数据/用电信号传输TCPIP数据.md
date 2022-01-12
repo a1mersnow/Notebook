@@ -31,7 +31,7 @@
 
 ### TCP包结构
 
-![image-20200320170932633](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200320170932633.png)
+![image-20200320170932633](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200320170932633.png)
 
 数据偏移（4位长）—以4字节为单位计算出的数据段开始地址的偏移值。
 
@@ -51,7 +51,7 @@
 
 ### 协议栈会根据数据长度和时间权衡发送的策略
 
-![image-20200321084957387](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321084957387.png)
+![image-20200321084957387](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321084957387.png)
 
 
 
@@ -59,11 +59,11 @@
 
 
 
-![image-20200321094601670](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321094601670.png)
+![image-20200321094601670](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321094601670.png)
 
 
 
-![image-20200321095941688](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321095941688.png)
+![image-20200321095941688](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321095941688.png)
 
 TCP 采用这样的方式确认对方是否收到了数据，在得到对方确认之前，发送过的包都会保存在发送缓冲区中。如果对方没有返回某些包对应 的 ACK 号（超时），那么就重新发送这些包。
 
@@ -75,11 +75,11 @@ TCP 采用这样的方式确认对方是否收到了数据，在得到对方确�
 
 ### 窗口
 
-![image-20200321100956005](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321100956005.png)
+![image-20200321100956005](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321100956005.png)
 
 
 
-![image-20200321101244447](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321101244447.png)
+![image-20200321101244447](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321101244447.png)
 
 窗口大小一般和接收方的缓冲区大小一致。
 
@@ -103,7 +103,7 @@ HTTP/1.1 服务器返回响应后，客户端可以接着发起下一个请求�
 
 无论哪种情况，完成数据发送的一方会发起断开过程
 
-![image-20200321123936129](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321123936129.png)
+![image-20200321123936129](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321123936129.png)
 
 ### 删除套接字
 
@@ -119,7 +119,7 @@ HTTP/1.1 服务器返回响应后，客户端可以接着发起下一个请求�
 
 ## 小结
 
-![image-20200321130441980](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321130441980.png)
+![image-20200321130441980](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321130441980.png)
 
 ## IP和以太网的包收发
 
@@ -139,14 +139,14 @@ HTTP/1.1 服务器返回响应后，客户端可以接着发起下一个请求�
 
 ### IP头部
 
-![image-20200321143149029](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321143149029.png)
+![image-20200321143149029](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321143149029.png)
 
-![image-20200321143558252](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321143558252.png)
+![image-20200321143558252](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200321143558252.png)
 
 
 ### MAC头部
 
-![image-20200323171102051](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323171102051.png)
+![image-20200323171102051](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323171102051.png)
 
 ARP协议通过广播查询接收方MAC地址，再将MAC地址写入MAC头部中的接收方MAC地址
 
@@ -164,13 +164,13 @@ ARP协议通过广播查询接收方MAC地址，再将MAC地址写入MAC头部�
 
 MAC模块将包取出，再在头尾加3个控制数据。
 
-![image-20200323175144627](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323175144627.png)
+![image-20200323175144627](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323175144627.png)
 
 末尾的FCS（帧校验序列）用来检查包传输过程中因噪声导致的波形紊乱和数据错误，它是一串32比特的序列
 
-![image-20200323175303486](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323175303486.png)
+![image-20200323175303486](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200323175303486.png)
 
-![image-20200324144338287](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324144338287.png)
+![image-20200324144338287](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324144338287.png)
 
 仅凭数据信号无法区分比特的边界，因此需要同时发送时钟信号。有两种方案：
 
@@ -213,7 +213,7 @@ MAC模块将包取出，再在头尾加3个控制数据。
 11. TCP模块根据IP头部中的接收方和发送方的IP地址，以及TCP头部中的接收方和发送方的端口号来查找到对应的套接字
 12. 如果包的内容是应用程序数据，则返回ACK包（可能和窗口大小包合并），如果是建立或断开连接的控制包，则返回相应的响应控制包，并通知应用程序建立和断开连接的操作状态
 
-![image-20200324160435341](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324160435341.png)
+![image-20200324160435341](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324160435341.png)
 
 
 
@@ -227,7 +227,7 @@ IP包最大长度由IP头部中的“全长”字段确定，该字段16比特�
 
 由应用程序来处理包丢失的问题，没收到回复就重发
 
-![image-20200324170119045](/Users/aimergenge/PersonalProjects/Notebook/网络是怎样连接的/用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324170119045.png)
+![image-20200324170119045](../用电信号传输TCPIP数据/用电信号传输TCPIP数据.assets/image-20200324170119045.png)
 
 UDP使用场景
 
